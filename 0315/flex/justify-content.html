@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify Content練習</title>
+    <style>
+        body{
+            background-color: seashell;
+        }
+        .container1{
+            display: flex;
+            background-color: plum;
+            /* 設定flex-direction來調整子容器方向 */
+            flex-direction: row;
+            justify-content: center;
+            height: 300px;
+            width: 100%;
+            margin:10px;
+        }
+        .container2{
+            display: flex;
+            background-color: plum;
+            flex-direction: row;
+            /* 加上justify-content屬性靠左對齊 */
+
+            height: 300px;
+            width: 100%;
+            margin:10px;
+        }
+        .container3{
+            display: flex;
+            background-color: plum;
+            flex-direction: row;
+            /* 加上justify-content屬性靠右對齊 */
+            height: 300px;
+            width: 100%;
+            margin:10px;
+        }
+        .container4{
+            display: flex;
+            background-color: plum;
+            flex-direction: row;
+            /* 加上justify-content屬性二側對齊 */
+            height: 300px;
+            width: 100%;
+            margin:10px;
+        }
+        .container5{
+            display: flex;
+            background-color: plum;
+            flex-direction: row;
+            /* 加上justify-content屬性空間均分對齊 */
+            height: 300px;
+            width: 100%;
+            margin:10px;
+        }
+        .item{
+            width: 80px;
+            height: 80px;
+            padding: 20px;
+        }
+        .box1{
+            background-color: lightgreen;
+        }
+        .box2{
+            background-color: #fa0;
+
+        }
+        .box3{
+            background-color: #ffa;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="item box1">box1</div>
+        <div class="item box2">box2</div>
+        <div class="item box3">box3</div>
+    </div>
+    <div class="container2">
+        <div class="item box1">box1</div>
+        <div class="item box2">box2</div>
+        <div class="item box3">box3</div>
+    </div>
+    <div class="container3">
+        <div class="item box1">box1</div>
+        <div class="item box2">box2</div>
+        <div class="item box3">box3</div>
+    </div>
+    <div class="container4">
+        <div class="item box1">box1</div>
+        <div class="item box2">box2</div>
+        <div class="item box3">box3</div>
+    </div>
+    <div class="container5">
+        <div class="item box1">box1</div>
+        <div class="item box2">box2</div>
+        <div class="item box3">box3</div>
+    </div>
+</body>
+</html>

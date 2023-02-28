@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>使用不同的欄寬比例</title>
+    <style>
+        [class^="box-"] {
+            background-color: skyblue;
+            display: grid;
+            place-items: center;
+        }
+        .container {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 300px 50%;
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box-1"> A </div>
+        <div class="box-2"> B </div>
+        <div class="box-3"> C </div>
+        <div class="box-4"> D </div>
+        <div class="box-5"> E </div>
+        <div class="box-6"> F </div>
+    </div>
+
+</body>
+
+</html>
