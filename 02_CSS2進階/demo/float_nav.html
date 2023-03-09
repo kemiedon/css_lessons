@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>側邊選單</title>
+    <style>
+        aside{
+            width: 180px;
+        }
+        h3{
+            width: 96%;
+            height: 40px;
+            line-height: 40px;
+            background: #4f92ef;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 2%;
+        }
+        .subnav{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin: auto;
+            overflow: auto;
+        }
+
+        .subnav li a{
+            /* 清除預設樣式 */
+            text-decoration: none;
+            color: black;
+            /* 行內元素轉塊級元素 */
+            width: 100%;
+            height: 40px;
+            display: block;
+            /* 縮排與行高 */
+            text-indent: 50px;
+            line-height: 40px;
+            /* 字型與大小 */
+            font-size: 16px;
+            font-family: '微軟正黑體';
+            /* 背景與底線 */
+            background: #e4e4e4;
+            border-bottom: 1px solid #595959;
+        }
+        .subnav li a:hover{
+            width: 97%;
+            color: #fff ;
+            border-left: 5px solid #fd4646;
+            background-color: #1B1B1B;
+        }
+    </style>
+</head>
+<body>
+    <aside>
+        <h3>商品選單</h3>
+        <ul class="subnav">
+            <li><a href="#">麵包</a></li>
+            <li><a href="#">蛋糕</a></li>
+            <li><a href="#">義大利麵</a></li>
+            <li><a href="#">Pizza</a></li>
+            <li><a href="#">甜點</a></li>
+        </ul>
+    </aside>
+</body>
+</html>

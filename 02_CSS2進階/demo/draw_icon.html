@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用偽元素繪製menu icon</title>
+    <style>
+        .menu {
+            position: relative;
+            background: #cd3e3d;
+            width: 3em;
+            height: 3em;
+            margin: auto;
+            margin-top: 5em;
+            margin-bottom: 5em;
+            border: 1em solid #fdaead;
+            cursor: pointer;
+        }
+
+        .menu:after {
+            content: "";
+            position: absolute;
+            top: 1em;
+            left: 1em;
+            width: 1em;
+            height: 0.2em;
+            border-top: 0.6em double #fff;
+            border-bottom: 0.2em solid #fff;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu"></div>
+</body>
+
+</html>

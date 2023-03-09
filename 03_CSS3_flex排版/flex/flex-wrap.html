@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Flex Wrap練習</title>
+    <style>
+        body{
+            background-color: seashell;
+        }
+        .container1{
+            display: flex;
+            background-color: plum;
+            /* 設定flex-direction來調整子容器方向 */
+            flex-direction: row;
+            flex-wrap: nowrap;
+            height: 300px;
+            width: 50%;
+            margin:10px;
+        }
+        .container2{
+            display: flex;
+            background-color: rgb(249, 196, 242);
+            flex-direction: row;
+            /* 試著加上flex-wrap，完成自動換行 */
+            height: 300px;
+            width: 50%;
+            margin:10px;
+        }
+        .container3{
+            display: flex;
+            background-color: rgb(228, 240, 213);
+            flex-direction: row;
+            /* 試著加上flex-wrap，完成自動換行 並反轉區塊*/
+            height: 300px;
+            width: 50%;
+            margin:10px;
+        }
+        .item{
+            width: 80px;
+            height: 80px;
+            padding: 20px;
+        }
+        .box1{
+            background-color: lightgreen;
+
+        }
+        .box2{
+            background-color: #fa0;
+        }
+        .box3{
+            background-color: #ffa;
+        }
+        .box4{
+            background-color: rgb(238, 196, 144);
+        }
+        .box5{
+            background-color: rgb(243, 94, 64);
+
+        }
+        .box6{
+            background-color: rgb(170, 222, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="item box1">box1</div>
+        <div class="item box2">box2</div>
+        <div class="item box3">box3</div>
+        <div class="item box4">box4</div>
+        <div class="item box5">box5</div>
+        <div class="item box6">box6</div>
+    </div>
+    <div class="container2">
+        <div class="item box1">box1</div>
+        <div class="item box2">box2</div>
+        <div class="item box3">box3</div>
+        <div class="item box4">box4</div>
+        <div class="item box5">box5</div>
+        <div class="item box6">box6</div>
+    </div>
+    <div class="container3">
+        <div class="item box1">box1</div>
+        <div class="item box2">box2</div>
+        <div class="item box3">box3</div>
+        <div class="item box4">box4</div>
+        <div class="item box5">box5</div>
+        <div class="item box6">box6</div>
+    </div>
+
+</body>
+</html>

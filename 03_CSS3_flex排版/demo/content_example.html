@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex內容區塊練習</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+        /* font-family: 'Mukta', sans-serif; */
+        /* 電腦與平板上應用的樣式 */
+
+        body {
+            background-color: rgb(237, 237, 237);
+            margin: 0px;
+            font-size: 14px;
+            font-family: "Mukta", sans-serif;
+        }
+
+        .header {
+            background: #f0acac;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 100px;
+            background-color: brown;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .logo>a {
+            width: 100%;
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+
+            display: block;
+        }
+
+        .navbar>ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+        }
+
+        .navbar>ul>li {
+            background-color: palegoldenrod;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar>ul>li>a {
+            display: block;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        .menu-icon {
+            display: none;
+        }
+
+        
+
+        #About {
+            background: #8aa;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            height: 400px;
+            align-items: stretch;
+            justify-content: space-around;
+        }
+
+        .my-photo {
+            display: flex;
+            width: 40%;
+            background: #999;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+
+        .description {
+            width: 50%;
+            background: #cab;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #Skills {
+            background-color: #fa0;
+            padding: 30px 0;
+        }
+
+        .shortcut {
+            display: flex;
+            list-style-type: none;
+            padding: 0px;
+            width: 80%;
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+
+        .shortcut>li {
+            background-color: lightgreen;
+            text-align: center;
+            line-height: 200px;
+            width: 32%;
+        }
+
+        #Photo {
+            background: #ffa;
+        }
+
+        .photo-list {
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+            padding: 0px;
+            width: 80%;
+            margin: 0 auto;
+            justify-content: space-between;
+            list-style: none;
+        }
+
+        .photo-list>li {
+            background-color: tomato;
+            text-align: center;
+            line-height: 100px;
+            width: 32%;
+            margin-bottom: 1%;
+            margin-top: 1%;
+        }
+
+        footer {
+            background: #333;
+            padding: 20px;
+        }
+
+        footer p {
+            width: 80%;
+            margin: auto;
+            color: #fff;
+            text-align: center;
+            letter-spacing: 1px;
+            font-family: "Mukta";
+        }
+        /* 手機 */
+        @media screen and (max-width:500px){
+
+            .header {
+                flex-wrap: wrap;
+                align-items: stretch;
+            }
+
+            .menu-icon {
+                display: block;
+                background: #8b0f9f;
+                padding: 5px;
+                display: flex;
+                color: #fff;
+                font-family: "Dosis";
+                justify-content: center;
+                align-items: center;
+            }
+
+            .navbar {
+                width: 100%;
+            }
+
+            .navbar>ul {
+                flex-direction: column;
+            }
+
+            .navbar>ul>li {
+                display: block;
+                background-color: rgb(238, 188, 96);
+                padding: 10px;
+                text-align: center;
+                border-bottom: 1px solid #333;
+                flex: 1 1 0%;
+            }
+            .container {
+                flex-direction: column;
+                
+            }
+            .my-photo {
+                width: 100%;
+                flex: 1 1 0;
+                margin-bottom: 20px;
+            }
+            .description {
+                width: 100%;
+                flex: 1 1 0;
+            }
+            .shortcut {
+                flex-direction: column;
+            }
+            .shortcut>li {
+                width: 100%;
+                margin-bottom: 20px;
+                flex: 1 1 0;
+            }
+            .photo-list {
+                flex-wrap: wrap;
+            }
+            .photo-list>li {
+                width: 48%;
+                margin-right: 1%;
+                margin-left: 1%;
+            }
+            .photo-list>li:nth-child(1) {
+                order: 1;
+                background: lightblue;
+            }
+            .photo-list>li:nth-child(2) {
+                order: 2;
+            }
+            .photo-list>li:nth-child(3) {
+                order: 4;
+                background: lightblue;
+            }
+            .photo-list>li:nth-child(4) {
+                order: 3;
+            }
+            .photo-list>li:nth-child(5) {
+                order: 5;
+                background: lightblue;
+            }
+            .photo-list>li:nth-child(6) {
+                order: 6;
+            }
+        }
+        /* 每個區塊共用container */
+    </style>
+</head>
+
+<body>
+    <!-- header.header>.logo+nav.navbar>ul>li*4>a -->
+    <header class="header">
+        <div class="logo"><a href="index.html">My Web</a></div>
+        <div class="menu-icon">Menu</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Experience</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- div#Banner -->
+    <div id="Banner"></div>
+    <!-- section#About>div.my-photo+div.description -->
+    <section id="About">
+        <div class="container">
+            <div class="my-photo">Photo</div>
+            <div class="description">Description</div>
+        </div>
+    </section>
+    <!-- section#Skills>ul.shortcut>li*3 -->
+    <section id="Skills">
+        <ul class="shortcut">
+            <li>Skill1</li>
+            <li>Skill2</li>
+            <li>Skill3</li>
+        </ul>
+    </section>
+    <!-- section#Photo>ul.photo-list>li*6 -->
+    <section id="Photo">
+        <ul class="photo-list">
+            <li>img</li>
+            <li>text</li>
+            <li>img</li>
+            <li>text</li>
+            <li>img</li>
+            <li>text</li>
+        </ul>
+    </section>
+    <footer>
+        <p>Copyright&copy;2023 MacroViz.com</p>
+
+    </footer>
+</body>
+
+</html>

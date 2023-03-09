@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid相片集範例</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .item{
+            background-color: coral;
+            height: 180px;
+            overflow: hidden;
+        }
+        img{
+            max-width: 100%;
+        }
+        .item:nth-child(3){
+            grid-area: 1 / 3 / 2 / 5;
+        }
+        .item:nth-child(8){
+            grid-area: 2 / 4 / 2 / 6;
+        }
+        .item:nth-child(6){
+            grid-area: 2 / 2 / 4 / 4;
+            height: 370px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"><img src="../imgs/japan1.jpg" alt=""></div>
+        <div class="item"><img src="../imgs/japan2.jpg" alt=""></div>
+        <div class="item"><img src="../imgs/food1.jpg" alt=""></div>
+        <div class="item"><img src="../imgs/japan3.jpg" alt=""></div>
+        <div class="item"><img src="../imgs/photo1.jpg" alt=""></div>
+        <div class="item"><img src="../imgs/pancake.jpg" alt=""></div>
+        <div class="item"><img src="../imgs/flowers1.jpg" alt=""></div>
+        <div class="item"><img src="../imgs/japan.jpg" alt=""></div>
+        <div class="item"><img src="../imgs/photo2.jpg" alt=""></div>
+        <div class="item"><img src="../imgs/photo3.jpg" alt=""></div>
+    </div>
+</body>
+</html>

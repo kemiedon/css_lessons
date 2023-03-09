@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相片框練習</title>
+    <style>
+        .container{
+            width: 1010px;
+            padding: 20px;
+            background: rgb(194, 171, 127);
+            margin:auto;
+        }
+        #photos{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin: auto;
+            overflow: auto;
+        }
+        .pic{
+            width: 200px;
+            height: 200px;
+            display: block;
+            float: left;
+            padding: 20px;
+            margin-right: 10px;
+            background: #fff;
+            border: 1px solid #ddd;
+        }
+        .pic img{
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul id="photos">
+            <li class="pic"><img src="../imgs/caesar.jpg" alt=""></li>
+            <li class="pic"><img src="../imgs/cake.jpg" alt=""></li>
+            <li class="pic"><img src="../imgs/greek-salad.jpg" alt=""></li>
+            <li class="pic"><img src="../imgs/mozzarella.jpg" alt=""></li>
+        </ul>
+    </div>
+</body>
+
+</html>

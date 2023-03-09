@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮動與清除浮動</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            background: #e51717;
+            margin-top: 10px;
+            border: 2px solid black;
+            /* float: left; */
+            
+        }
+
+        .box2 {
+            width: 200px;
+            height: 100px;
+            color: #0d0c0c;
+            background: url("imgs/star.jpeg") repeat center;
+            margin-top: 10px;
+            padding: 20px;
+            border: 2px solid black;
+            /* float: left; */
+        }
+
+        .box3 {
+            width: 200px;
+            height: 100px;
+            color: #0d0c0c;
+            margin-top: 10px;
+            background-color: rgb(237, 152, 14);
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 2px solid black;
+            /* clear: both; */
+        }
+        .img-box{
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <p>Hello, world!</p>
+    </div>
+    <div class="box2"></div>
+    <div class="box3">
+        <p>CSS課程</p>
+    </div>
+    <div class="img-box">
+        <img src="https://www.timeforkids.com/wp-content/uploads/2021/07/turtle1-1.jpg" alt="">
+    </div>
+</body>
+
+</html>

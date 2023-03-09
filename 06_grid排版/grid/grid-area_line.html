@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area比例切分範例</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 150px);
+            gap: 10px;
+        }
+        /* 為每個 item 添加樣式 */
+        .item {
+            background-color: #eeb519;
+            border: 1px solid #ddd;
+            padding: 10px;
+            font-size: 24px;
+            text-align: center;
+        }
+        .item-1 {
+            grid-area: 1 / 1 / 1 / 4;
+            background-color: crimson;
+        }
+
+        .item-2 {
+            grid-area: 2 / 1 / 4 / 2;
+            background: #b4e94a;
+        }
+
+        .item-3 {
+            grid-area: 4 / 1 / 4 / 4 ;
+            background-color: darkgoldenrod;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-1">A</div>
+        <div class="item item-2">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item item-3">G</div>
+    </div>
+      
+</body>
+
+</html>

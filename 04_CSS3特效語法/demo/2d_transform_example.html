@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform練習</title>
+    <style>
+        .box-list{
+            width: 80%;
+            padding: 30px 0;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 40px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box:nth-child(1){
+            background: gold;
+        }
+        .box:nth-child(1):hover{
+            transform: translate(-100px, 0px);
+            transition: all 1s ease-in-out;
+        }
+        .box:nth-child(2){
+            background: rgb(255, 115, 0);
+        }
+        .box:nth-child(2):hover{
+            transform: scale(1.5);
+            transition: all 1s ease-in-out;
+        }
+        .box:nth-child(3){
+            background: rgb(118, 88, 240);
+        }
+        .box:nth-child(3):hover{
+            transform: rotate(45deg);
+            transition: all 1s ease-in-out;
+        }
+        .box:nth-child(4){
+            background: rgb(220, 95, 201);
+        }
+        .box:nth-child(4):hover{
+            transform: skew(25deg, 0deg);
+            transition: all 1s ease-in-out;
+        }
+        a{
+            font-size: 1.5rem;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="box-list">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+    </div>
+    <a target="_blank" https://www.toptal.com/developers/css3maker/css3-transform">CSS3 2D transform 產生器(generator)</a>
+</body>
+</html>
