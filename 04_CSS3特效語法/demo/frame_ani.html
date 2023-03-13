@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<div lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>逐格動畫</title>
+        <style>
+            .Animation {
+                margin: 0 auto;
+                max-width: 100px;
+                overflow: hidden;
+                margin-bottom: 20px;
+            }
+
+            @-webkit-keyframes frame-animation {
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+
+            @keyframes frame-animation{
+                100% {
+                transform: translateX(-100%);
+                }
+            }
+
+            .Animation-frames {
+
+                display: flex;
+                width: 1200%;
+                -webkit-animation: frame-animation 1000ms infinite;
+                animation: frame-animation 1000ms infinite;
+                -webkit-animation-timing-function: steps(12);
+                animation-timing-function: steps(12);
+            }
+
+            .Animation-frame {
+                display: block;
+                width: 8.3333333333%;
+                max-width: 8.3333333333%;
+                flex-basis: 8.3333333333%;
+            }
+
+            .Animation-frame img {
+                width: 100%;
+
+            }
+        </style>
+    </head>
+
+    <div class="Animation">
+        <div class="Animation-frames">
+            <div class="Animation-frame"><img src="../imgs/frame/1.png" /></div>
+            <div class="Animation-frame"><img src="../imgs/frame/2.png" /></div>
+            <div class="Animation-frame"><img src="../imgs/frame/3.png" /></div>
+            <div class="Animation-frame"><img src="../imgs/frame/4.png" /></div>
+            <div class="Animation-frame"><img src="../imgs/frame/5.png" /></div>
+            <div class="Animation-frame"><img src="../imgs/frame/6.png" /></div>
+            <div class="Animation-frame"><img src="../imgs/frame/7.png" /></div>
+            <div class="Animation-frame"><img src="../imgs/frame/8.png" /></div>
+            <div class="Animation-frame"><img src="../imgs/frame/9.png" /></div>
+            <div class="Animation-frame"><img src="../imgs/frame/10.png" /></div>
+        </div>
+    </div>
+    </body>
+
+    </html>

@@ -9,7 +9,7 @@
     <style>
         :root {
             --main-color: #008080;
-            --main-bg-color: #f2f2f2;
+            --main-bg-color: rgb(255, 224, 122);
             --main-font-size: 16px;
         }
 
@@ -21,14 +21,16 @@
         }
 
         /* 修改變數值 */
-        button {
+        p {
             --main-color: #ff0000;
+            color: var(--main-color);
         }
     </style>
 </head>
 
 <body>
-    <button>確定</button>
+    這是body的文字
+    <p>CSS3變數練習, 文字已換色</p>
 </body>
 
 </html>

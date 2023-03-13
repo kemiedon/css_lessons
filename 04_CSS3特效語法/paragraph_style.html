@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 段落文字設定</title>
+    <style>
+        .content1{
+            width: 300px;
+            height: 200px;
+            /* 裁剪文字符合區塊，文末加省略符號 */
+            text-overflow: ellipsis;
+            /* 限定只顯示3行 */
+            -webkit-line-clamp: 3;
+            
+        }
+        
+        h1{
+            margin-top: 50px;
+            width: 10px;
+            word-break: break-all;
+        }
+        .content2{
+            width: 80px;
+            /* 長單字換行 */
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <p class="content1">
+        中華民國蛋品行銷發展協會理事長高傳謨今天接受媒體電訪指出，現在因缺雞蛋，有些商家改用鴨蛋，加上端午節將近，使用鹹蛋黃的需求增加，因此明天起鴨蛋產地價、批發價每台斤將漲3元。根據台灣農業市場行情資料庫，鴨蛋每台斤價格自去年4月起長期維持在43元，但在今年2月20日上漲至45元。明天上漲至48元後將創下新高。卜蜂董事長鄭武樾今天在季報例行記者會上表示，缺蛋是全球性的問題，由於成本高漲，該漲還是要漲，但推估再漲幅度也不會太大。至於台灣缺蛋缺雞問題，預估在9月29日中秋節前後可以緩解。
+    </p>
+    <h1>吉祥如意</h1>
+    <p class="content2">Happy Birthday to My Brother and welcome to Taiwan-festival</p>
+
+</body>
+</html>

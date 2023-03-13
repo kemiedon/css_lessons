@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3濾鏡練習</title>
+    <style>
+        .img-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+
+        img {
+            width: 300px;
+        }
+
+        .blur {
+            filter: blur(5px);
+        }
+
+        .sharpen {
+            filter: brightness(150%) contrast(150%) saturate(150%);
+        }
+
+        .opacity {
+            filter: opacity(50%);
+        }
+
+        .invert {
+            filter: invert(100%);
+        }
+
+        .hue-rotate {
+            filter: hue-rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="img-container">
+        <img class="blur" src="imgs/sea2.jpeg" alt="">
+        <img class="sharpen" src="imgs/sea2.jpeg" alt="">
+        <img class="opacity" src="imgs/sea2.jpeg" alt="">
+        <img class="invert" src="imgs/sea2.jpeg" alt="">
+        <img class="hue-rotate" src="imgs/sea2.jpeg" alt="">
+    </div>
+</body>
+
+</html>
