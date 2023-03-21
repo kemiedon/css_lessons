@@ -8,8 +8,11 @@
     <style>
         .content1{
             width: 300px;
-            height: 200px;
+            /* height: 200px; */
             /* 裁剪文字符合區塊，文末加省略符號 */
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
             text-overflow: ellipsis;
             /* 限定只顯示3行 */
             -webkit-line-clamp: 3;
