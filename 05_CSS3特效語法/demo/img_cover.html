@@ -1,25 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Img object-fit</title>
     <style>
-        #banner{
+        #banner {
             width: 100%;
             height: 400px;
         }
-        img{
+        
+        #banner img {
             width: 100%;
             height: 400px;
             object-fit: cover;
         }
+        
+        .small-img {
+            margin-top: 30px;
+            width: 400px;
+            height: 400px;
+        }
+        
+        .small-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
     </style>
 </head>
+
 <body>
     <div id="banner">
         <img src="../imgs/sea2.jpeg" alt="">
     </div>
+    <div class="small-img">
+        <img src="../imgs/maple.jpeg" alt="">
+    </div>
 </body>
+
 </html>
