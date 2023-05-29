@@ -125,11 +125,11 @@ img {
     position: absolute;
     width: 200px;
     height: 200px;
-    top: 30px;
+    top: 300px;
     left: 30px;
     float: left;
     background-color: coral;
-    animation: squareToCircle 2s 1s infinite alternate;
+    animation: squareToCircle 5s 1s infinite alternate;
     /* animation: spin 10s ease-in infinite; */
 }
 
@@ -141,13 +141,14 @@ img {
     left: -20%;
     border-left: 257px solid transparent;
     border-right: 257px solid transparent;
-    border-bottom: 405px solid tomato;
+    border-bottom: 405px solid rgb(71, 255, 215);
     position: relative;
     transform: rotate(30deg);
-    animation: spin 10s ease-in infinite;
+    animation: spin 10s ease infinite;
 }
 
-.triangle:after {
+
+/* .triangle:after {
     content: '';
     position: absolute;
     top: 15px;
@@ -157,7 +158,7 @@ img {
     border-left: 240px solid transparent;
     border-right: 240px solid transparent;
     border-bottom: 380px solid white;
-}
+} */
 
 @keyframes move {
     0% {
@@ -350,6 +351,9 @@ h2 {
     margin-top: 20px;
 }
 
+
+/* 先設定list、li與skill name樣式 */
+
 .skills-list {
     list-style: none;
     margin: 0;
@@ -371,6 +375,9 @@ h2 {
     font-size: 20px;
 }
 
+
+/* 設定bar的外層樣式 */
+
 .skill-bar {
     background-color: #ddd;
     height: 20px;
@@ -381,6 +388,9 @@ h2 {
     margin-bottom: 10px;
     box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
 }
+
+
+/* 設定bar的內層樣式 */
 
 .skill-level {
     background-color: #4CAF50;
@@ -395,6 +405,9 @@ h2 {
     top: 0;
     left: 0;
 }
+
+
+/* 設定各項目的顏色與動畫 */
 
 .skill-html {
     animation: progress-html 2s ease-in-out;
@@ -427,7 +440,7 @@ h2 {
 }
 
 
-/* Animation */
+/* skill Animation */
 
 @keyframes progress-html {
     from {
@@ -583,7 +596,7 @@ h2 {
     object-fit: cover;
 }
 
-.side_back {
+.back {
     display: flex;
     background: #c1a27a;
     justify-content: center;
@@ -598,7 +611,7 @@ h2 {
     transform: rotateY(180deg);
 }
 
-.card:hover .side.back {
+.card:hover .back {
     transform: rotateY(0deg);
 }
 
