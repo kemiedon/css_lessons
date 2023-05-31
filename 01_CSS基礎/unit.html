@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS的單位</title>
+    <style>
+        body {
+            font-size: 16px;
+        }
+        
+        .container {
+            width: 80%;
+            font-size: 12px;
+        }
+        
+        h1 {
+            font-size: 2rem;
+        }
+        
+        p {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+        }
+        
+        .box {
+            width: 50%;
+            height: 20vh;
+            background-color: lightblue;
+            margin-bottom: 1em;
+        }
+        
+        .box-small {
+            width: calc(100vw - 100px);
+            height: 50vmin;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>單位應用範例</h1>
+        <p>這是一個使用不同 CSS 單位的範例。</p>
+
+        <div class="box"></div>
+        <div class="box"></div>
+
+        <div class="box box-small"></div>
+    </div>
+</body>
+
+</html>
