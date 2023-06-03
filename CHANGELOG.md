@@ -1,4 +1,8 @@
 #更新紀錄
+## v2.2 (2023-06-03)
+### 新增
+- demo_why_css.html
+
 ## v2.1 (2023-05-31)
 ### 更新
 - unit/piority/pseudo_element.html範例

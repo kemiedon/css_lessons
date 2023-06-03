@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>為什麼要使用CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #Menu{
+            margin: 50px;
+            padding: 10px;
+            width: 250px;
+        }
+        .section-title{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+            background-color: chocolate;
+        }
+        .section-title h1{
+            font-size: 26px;
+            text-align: center;  
+            color: #fff;
+        }
+       img{
+            width: 40px;
+            margin-right:20px;
+            float: left;
+        }
+        ul{
+            margin: 0;
+            padding:0;
+            list-style: none;
+        }
+        .item a{
+            text-decoration: none;
+            color: #333;
+            font-family: '微軟正黑體';
+            width: 100%;
+            height: 50px;
+            display: block;
+            line-height: 50px;
+            font-size: 18px;
+            text-align: center;
+        }
+        .item a:hover{
+            background: #4d4c4c;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="Menu">
+        <div class="section-title">
+            <img src="imgs/284792.png" alt="">
+            <h1>產品分類</h1>
+        </div>
+        <ul>
+            <li class="item"><a href="#">蛋糕</a></li>
+            <li class="item"><a href="#">麵包</a></li>
+            <li class="item"><a href="#">甜甜圈系列</a></li>
+        </ul>
+    </div>
+</body>
+</html>
