@@ -775,6 +775,41 @@ footer p {
 /* 手機 */
 
 @media screen and (max-width: 767px) {
+    .circle1 {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        top: -10%;
+        left: 60%;
+        border-radius: 50%;
+        border: 15px solid #f89e59;
+        z-index: -1;
+        animation: move 10s ease-in infinite;
+    }
+    
+    .circle2 {
+        position: absolute;
+        margin-left: 40%;
+        margin-top: 20%;
+        width: 150px;
+        height: 150px;
+    }
+    
+    .shape {
+        width: 100px;
+        height: 100px;
+
+    }
+    .slogan{
+        margin: auto 20px;
+    }
+    .slogan h2{
+        font-size: 2rem;
+    }
+    .triangle {
+        display: none;
+    }
+    
     .header {
         flex-wrap: wrap;
         align-items: stretch;
@@ -806,6 +841,9 @@ footer p {
         flex-wrap: wrap;
         justify-content: space-around;
     }
+    .description{
+        padding: 30px 0px;
+    }
     .main-pic {
         width: 100%;
         height: auto;
@@ -814,10 +852,21 @@ footer p {
         width: 95%;
         margin: auto;
     }
+    .work-experience-list li{
+        flex-wrap: wrap;
+    }
+    .work-period{
+        width: 100%;
+        margin-bottom: 10px;
+    }
     #Portfolio .container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+    .skill-name{
+        width: 120px;
+        margin-right: 5px;
     }
     .card {
         width: 48%;
