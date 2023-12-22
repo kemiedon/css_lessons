@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Layout練習</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        header{
+            border-bottom: 1px solid #999;
+        }
+        .logo{
+            width: 200px;
+            float: left;
+            margin-left: 20px;
+        }
+        .logo img{
+            width: 80px;
+        }
+        nav{
+            float: right;
+            line-height: 60px;
+            margin-top: 10px;
+        }
+        nav ul{
+            list-style: none;
+        }
+        nav ul li{
+            float: left;
+            margin-right: 30px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+            font-family: 'Noto Sans TC', sans-serif;
+            letter-spacing: 2px;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+        nav ul li a:hover{
+            color: tomato;
+        }
+        .clear-both{
+            clear: both;
+        }
+        h1{
+            text-align: center;
+        }
+        .container{
+            padding: 3rem 0;
+            width: 960px;
+            margin: auto;
+            overflow: hidden;
+        }
+        .item{
+            width: 300px;
+            margin-right:20px;
+            text-align: center;
+            color: #fff;
+            float:left;
+        }
+        .item p{
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        .item:nth-child(1){
+            background-color: rgb(19, 98, 233);
+        }
+        .item:nth-child(2){
+            background-color: tomato;
+        }
+        .item:nth-child(3){
+            background-color: lightseagreen;
+        }
+        .item img{
+            width: 280px;
+            margin: 10px;
+        }
+        .news-item{
+            display: block;
+            overflow: hidden;
+            line-height: 50px;
+            border-bottom: 1px dashed #333;
+        }
+        .date,.title{
+            font-family: 'Quicksand', sans-serif;
+            font-size: 18px;
+            float: left;
+            margin-right: 30px;
+        }
+        .title{
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        section{
+            padding-top: 30px;
+        }
+
+        footer{
+            width: 100%;
+            height: 50px;
+            color: #fff;
+            text-align: center;
+            line-height: 50px;
+            background-color: black;
+        
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="../imgs/logo.png" alt=""></div>
+        <nav>
+            <ul>
+                <li><a href="#">最新消息</a></li>
+                <li><a href="#">產品介紹</a></li>
+                <li><a href="#">聯絡我們</a></li>
+            </ul>
+        </nav>
+        <div class="clear-both"></div>
+    </header>
+    <section id="News">
+        <h1>最新消息</h1>
+        <div class="container">
+            <a class="news-item">
+                <div class="date">2023-06-23</div>
+                <div class="title">新品上市，優惠7折</div>
+            </a>
+            <a class="news-item">
+                <div class="date">2023-05-30</div>
+                <div class="title">預訂生日蛋糕送好禮</div>
+            </a>
+            <a class="news-item">
+                <div class="date">2023-05-01</div>
+                <div class="title">母親節蛋糕特惠中</div>
+            </a>
+        </div>
+    </section>
+    <section id="Product">
+        <h1>產品分類</h1>
+        <div class="container">
+            <div class="item">
+                <img src="../imgs/cake-cover.jpg" alt="蛋糕">
+                <p>蛋糕</p>
+            </div>
+            <div class="item">
+                <img src="../imgs/bread.jpg" alt="麵包">
+                <p>麵包</p>
+            </div>
+            <div class="item">
+                <img src="../imgs/dessert.jpg" alt="甜點">
+                <p>甜點</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>Copyright &copy; 2023</footer>
+</body>
+</html>

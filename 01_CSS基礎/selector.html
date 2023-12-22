@@ -7,7 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selector選擇器練習</title>
     <style>
-
+        .parent > p {
+            color: red;
+        }
+        .ancestor p {
+            color: blue;
+        }
     </style>
 </head>
 
@@ -28,19 +33,23 @@
         <li class="item">產品介紹</li>
         <li class="item">聯絡我們</li>
     </ul>
-    <div>
-        <ul>
-            <li>
-                <p>test1</p>
-            </li>
-            <li>
-                <p>test2</p>
-            </li>
-            <li>
-                <p>test3</p>
-            </li>
-        </ul>
+    <div class="parent">
+        <p>這是直接子元素</p>
+        <div>
+          <p>這不是直接子元素</p>
+        </div>
+      </div>
+      
     </div>
+    <div class="ancestor">
+        <div class="parent">
+          <p>這是後代元素</p>
+          <div>
+            <p>這也是後代元素</p>
+          </div>
+        </div>
+      </div>
+      
     <input type="text" value="輸入框1">
     <input type="radio"> 男 <input type="radio"> 女
 </body>
