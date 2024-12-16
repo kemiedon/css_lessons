@@ -1,0 +1,841 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap');
+/* ==========================
+   全域 Reset & 基本樣式
+========================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #4D5053;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+img {
+    width: 100%;
+    height: auto;
+}  
+h3{
+    font-size: 1.2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+    font-family: 'DM Serif Display', serif;
+}
+section{
+    padding: 100px 0px 10px 0px;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* ==========================
+   Header 區塊
+========================== */
+header .container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    margin-left: 20px;
+    padding: 20px 0;
+}
+/* Menu 按鈕與導覽列 */
+.navbar{
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px;
+    display: none;
+}
+.nav-link{
+    display: block;
+    width: 100%;
+    height: 70px;
+    font-size: 25px;
+    text-align: center;
+}
+.search-form{
+    margin: 0 auto;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 30px;
+}
+input{
+    width: 300px;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid #dddddd;
+    margin: auto;
+}
+.menu-icon i{
+    font-size: 30px;
+}
+.menu-icon{
+    margin-right: 20px;
+}
+
+
+/* ==========================
+   Banner 區塊
+========================== */
+#Banner{
+    width: 100%;
+    height: 500px;
+    background: url('../images/phone/Banner.png') no-repeat;
+    background-position: center bottom;
+    border-bottom-left-radius: 120px; ;
+}
+.intro{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 15%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(255,255,255, 0.5);
+}
+.hero-title{
+    font-family: "DM Serif Display", serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.desc{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.more{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.more i{
+    color: #CDA274;
+}
+.get_started{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #292F36;
+    padding: 20px 28px;
+    border: none;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+.fa-arrow-right{
+    color: #CDA274;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+/* ==========================
+   About 區塊
+========================== */
+#About .container {
+    display: flex;
+    flex-direction: column; /* 手機版先垂直排列 */
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    gap: 20px;
+}
+.col-4,.col-8 {
+    width: 100%;
+    text-align: center;
+}
+.section-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    font-family: 'DM Serif Display', serif;
+}
+.col-4{
+    order:1;
+}
+.sub-title {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+.about-pic{
+    border-top-right-radius: 120px;
+    border-bottom-left-radius: 80px;
+    width: 100%;
+}
+.call-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.call {
+    background-color: #F4F0EC;
+    border: none;
+    border-radius: 50%;
+    padding: 12px;
+    font-size: 20px;
+    
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+}
+.call i{
+    color: #CDA274;
+}
+
+.call-info .call-number {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Jost';
+}
+
+.call-info .call-title {
+    font-size: 16px;
+    color: #666;
+}
+/* ==========================
+   Testimonials 區塊
+========================== */
+#Testimonials {
+    padding: 50px 15px;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.testimonial-wrapper {
+    display: flex; /* 使用 Flexbox 排版 */
+    flex-direction: column; /* 手機版卡片垂直排列 */
+    gap: 20px; /* 卡片之間的間距 */
+    padding: 50px 20px; /* 上下 50px，左右 20px 的內邊距 */
+    background-color: #F4F0EC; /* 背景顏色 */
+    border-radius: 50px; /* 四邊圓角設置為 70px */
+}
+
+.testimonial-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name {
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px
+}
+
+.location {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+/* End Testimonials */
+
+
+/* Feature區塊 */
+.feature-list li{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding: 30px 0px;
+}
+/* ==========================
+   Clients 區塊
+========================== */
+.clients-wrapper {
+    display: flex;
+    gap: 20px; /* Logo 之間的間距 */
+    overflow-x: auto; /* 手機版可橫向滑動 */
+    -webkit-overflow-scrolling: touch; /* 提升手機滑動順暢度 */
+    padding-bottom: 10px;
+}
+
+.clients-wrapper::-webkit-scrollbar {
+    display: none; /* 隱藏捲軸樣式 */
+}
+
+.client-logo {
+    flex: 0 0 auto; /* 確保圖片不縮放 */
+    width: 150px;
+    height: 80px;
+    object-fit: contain; /* 確保圖片完整顯示 */
+}
+/* Project */
+.pic{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.item:nth-child(1) .pic{
+    border-top-right-radius: 50px;
+}
+.item:nth-child(2) .pic{
+    border-top-left-radius: 50px;
+}
+.item:nth-child(3) .pic{
+    border-bottom-right-radius: 50px;
+}
+.item:nth-child(4) .pic{
+    border-bottom-left-radius: 50px;
+}
+
+.title-group{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.section-title{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.sub-title{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+.item{
+    margin-bottom: 30px;
+}
+
+
+.name-group h3{
+    font-size: 1.5rem;
+    font-family: 'DM Serif Display', serif;
+}
+.project-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.read{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4F0EC;
+    border-radius: 50%;
+}
+/* ==========================
+   Stats 區塊
+========================== */
+#Stats {
+    padding: 50px 20px; /* 區塊內邊距 */
+    background-color: #f4f0ec; /* 背景顏色 */
+    text-align: center;
+}
+.stats-wrapper {
+    display: grid; /* 使用 CSS Grid 排版 */
+    grid-template-columns: 1fr 1fr; /* 手機版二欄 */
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.stat-number {
+    font-family: 'DM Serif Display', serif; /* 高級數字字體 */
+    font-size: 48px;
+    color: #c39977; /* 數字顏色 */
+    margin: 0;
+}
+
+.stat-title {
+    font-size: 14px;
+    color: #333; /* 標題文字顏色 */
+    margin: 5px 0 0;
+}
+
+/* 分隔線樣式 */
+.stat-item::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 1px;
+    background-color: #d8cfc8; /* 分隔線顏色 */
+}
+
+.stat-item:nth-child(2)::after, .stat-item:last-child::after {
+    display: none; /* 移除最後一個分隔線 */
+}
+/* Article */
+.article-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+.article-list li{
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid #dddddd;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.pic-frame{
+    aspect-ratio: 4/3;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+}
+.pic{
+    width: 100%;
+}
+.tag{
+    background-color: aliceblue;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 8px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+.link-group{
+    display: flex;
+    justify-content: space-between;
+}
+.active{
+    background: #F4F0EC;
+}
+.read.active{
+    background: white;
+}
+/* ==========================
+   Footer & Contact 區塊
+========================== */
+#contact {
+    background-color: #232323; /* 深黑色背景 */
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.contact-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'DM Serif Display', serif;
+}
+
+.contact-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contact-button {
+    background-color: #c39977; /* 按鈕顏色 */
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.contact-button i{
+    color: #333;
+}
+.contact-button:hover {
+    background-color: #a07855;
+}
+
+/* Footer 區塊 */
+#footer {
+    padding: 50px 20px 20px;
+    text-align: center;
+}
+.footer-logo img{
+    width: 200px;
+    margin: 0 auto;
+}
+#footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.footer-social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-column {
+    margin-bottom: 20px;
+}
+.footer-column a {
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+    display: block;
+    line-height: 40px;
+}
+.footer-column p{
+    font-size: 1rem;
+    line-height: 30px;
+}
+.footer-column:nth-child(2), .footer-column:nth-child(3) {
+    display: none;
+}
+.footer-logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #232323;
+}
+
+.footer-heading {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.footer-description {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.footer-social a {
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #c39977;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #c39977;
+}
+
+/* 底部 */
+.footer-bottom {
+    font-size: .9rem;
+    line-height: 30px;
+    text-align: center;
+    color: #777;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+/* ==========================
+   RWD 平板版 (481px 以上)
+========================== */
+@media screen and (min-width: 481px){
+    #Banner{
+        background: url('../images/tablet/Banner.png');
+        height: 556px;
+    }
+    .intro{
+        background: transparent;
+        width: 40%;
+    }
+    section{
+        padding: 100px 0;
+    }
+    #About .container {
+        flex-direction: row; /* 平板版開始橫向排列 */
+        align-items: center;
+    }
+    .about-pic{
+        width: 90%;
+    }
+    .col-4 {
+        width: 40%;
+        text-align: left;
+        padding: 10px;
+    }
+    .col-8{
+        width: 60%;
+        text-align: right;
+    }
+    .col-4 {
+        order: 0;
+    }
+    .section-title {
+        font-size: 26px;
+    }
+
+    .sub-title {
+        font-size: 16px;
+    }
+
+    .call-group {
+        justify-content: flex-start;
+    }
+    .menu-icon{
+        display: none;
+    }
+    .navbar{
+        display: block;
+        height: auto;
+        width: 60%;
+        padding-top: 0px;
+    }
+    .navbar ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar ul li{
+        width: 20%;
+    }
+    .nav-link{
+        font-size: 1.2rem;
+        height: auto;
+        transition: all 0.3s ease;
+    }
+    .nav-link:hover{
+        color: #c39977;
+    }
+    .search-form{
+        width: auto;
+    }
+    .search-btn{
+        margin-top: -5px;
+    }
+    .search-form input{
+        display: none;
+    }
+    .search-form button i{
+        margin-top: -10px;
+    }
+    .search-form button i:hover{
+        color: #c39977;
+    }
+    /* Testimonials */
+    .section-title{
+        width: 100%;
+    }
+
+    .testimonial-wrapper {
+        flex-direction: row; /* 卡片橫向排列 */
+        flex-wrap: wrap;
+        justify-content: center; /* 水平置中排列 */
+        gap: 20px; /* 卡片間距 */
+        border-radius: 50px; /* 四邊圓角設置為 70px */
+    }
+
+    .testimonial-card {
+        flex: 0 0 calc(33.33% - 20px); /* 每個卡片占 33.33% 減去間距 */
+    }
+    /* Clients */
+    .clients-wrapper {
+        overflow: hidden; /* 隱藏捲軸 */
+        justify-content: space-between; /* 五個 logo 等分排列 */
+        flex-wrap: nowrap;
+    }
+
+    .client-logo {
+        flex: 0 0 calc(20% - 20px); /* 每個 logo 占 20% 減去間距 */
+        max-width: 100px;
+    }
+    /* Projects */
+    .title-group{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .project-list{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .item{
+        width: 46%;
+        margin-bottom: 50px;
+    }
+    /* Feature */
+    .feature-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .feature-list li{
+        width: 30%;
+    }
+    /* Stats */
+    .stats-wrapper {
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* 四欄排版 */
+    }
+
+    .stat-number {
+        font-size: 56px; /* 平板版數字變大 */
+    }
+    /* Article */
+    .article-list{
+        display: flex;
+        justify-content: space-between;
+    }
+    .article-list li{
+        width: 32%;
+    }
+    /* End Projects */
+    #footer .container {
+        flex-direction: row; /* 橫向排列 */
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .footer-column {
+        flex: 1; /* 平均分配寬度 */
+        text-align: left;
+        padding: 0px 20px;
+    }
+    .footer-column:nth-child(2){
+        display: block;
+        text-indent: 50px;
+    }
+    #contact {
+        text-align: center;
+    }
+}
+/* ==========================
+   RWD 電腦版 (1024px 以上)
+========================== */
+@media screen and (min-width: 1024px) {
+    #Banner{
+        height: 700px;
+        background: url('../images/Image.jpg');
+        background-size: cover;
+    }
+    .testimonial-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .testimonial-name{
+        margin-left: 20px;
+        text-align: left;
+    }
+    .testimonial-wrapper {
+        gap: 30px; /* 卡片間距增加 */
+    }
+    .location {
+        margin-bottom: 0px;
+    }
+    .description{
+        text-align: left;
+    }
+    .testimonial-card {
+        align-items: flex-start;
+    }
+    .section-title {
+        font-size: 48px; /* 電腦版標題字體變大 */
+    }
+    .clients-wrapper {
+        justify-content: space-evenly;
+        gap: 30px;
+    }
+
+    .client-logo {
+        flex: 0 0 calc(20% - 30px); /* 每個 logo 平均佔 20% */
+        max-width: 150px;
+    }
+
+    .stat-number {
+        font-size: 64px; /* 電腦版數字更大 */
+    }
+    .footer-column:nth-child(3){
+        display: block;
+    }
+}
+/* ==========================
+   RWD 大型螢幕 (1200px 以上)
+========================== */
+@media screen and (min-width: 1200px){
+    #Banner{
+        background: url('../images/Banner.jpg') no-repeat;
+        height: 900px;
+        background-size: cover;
+        background-position: center bottom;
+        border-bottom-left-radius: 300px;
+    }
+    .intro{
+        width: 35%;
+        top: calc((900px - 50%) / 2);
+        margin-left: 20%;
+    }
+    .hero-title{
+        font-size: 4rem;
+        font-family: 'DM Serif Display', serif;
+    }
+    .desc{
+        font-size: 22px;
+    }
+    
+}
